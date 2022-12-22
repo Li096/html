@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <title>Monster官網</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script>
+       $(window).load(function() {
+         $('.flexslider').flexslider({
+             animation: "slide",
+             rtl: true
+          });
+      });
+		</script>
+    <style>
+    *{
+    margin:0;
+    /*font-size: 20px;
+    text-align:center;
+    color:grey;*/
+  }
+    /*===========================================================*/
+    /*top*/
+    .top{
+      background-color: black;
+      color:rgb(66,190,66);
+      margin:0;
+    }
+    .top .container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin:0px;
+    }
+    .top .container .loge{
+      font-size:25px;
+      font-weight:bold;
+    }
+    .top .container .loge img{
+      width:100px;
+      vertical-align:middle;
+    }
+    .top .container .top-nav{
+      font-size:20px;
+      font-weight:bold;   
+  }
+    .top .container .top-nav a{
+      text-decoration:none;
+    }
+    /*top nav*/
+    .nav {
+      background-color:black;
+      display:flex;
+      justify-content:center;
+  }
+    .nav ul {
+        list-style-type:none;  
+        margin:0; 
+        padding: 0; 
+        overflow:hidden; 
+        background-color:black; 
+    }
+    .nav li {
+        float:left; 
+        font-weight:bold;
+    }
+    .nav li a {    
+        display:block;  
+        color:white;  
+        text-align:center;  
+        padding:14px 16px;  
+        text-decoration:none;  
+    }
+    .nav li a:hover {
+        background-color:rgb(20,20,20); 
+    }
+    /*top nav css*/
+    .dropdown:hover .dropdown-content {
+      display:block; /*使用block呈現上下排列*/
+  }
+    li.dropdown:hover{
+      background-color:rgb(20,20,20); /*設定背景顏色*/
+  }
+    .dropdown-content {  /*設定下拉選單內容格式*/
+      display:none;
+      position:absolute;
+      background-color:rgb(40,40,40);
+      min-width:160px;
+      z-index:1;
+  }
+    .dropdown-content a {/*設定下拉選單連結內容格式*/
+      color:rgb(40,40,40);
+      padding: 12px 16px;
+      text-decoration:none;
+      display:block;
+      text-align:left;
+  }
+    /*===========================================================*/
+    /*slider*/
+    .slider{
+      margin:0;
+      
+    }
+    /*===========================================================*/
+    /*banner*/
+    .banner{
+      background-image:linear-gradient(#023535,black);
+      padding:30px;
+      text-align:center;
+      color:white;
+    }
+    .banner h1{
+      padding:20px;
+    }
+    .banner h2{
+      padding:15px;
+    }
+    /*===========================================================*/
+    /*faculty*/
+   .faculty {
+      display:block;
+      justify-content:center;
+      text-align:center;
+      background-color:white;
+      padding:40px;
+    }
+    .faculty h2 {
+      font-size: 25px;
+      color: rgb(50,51,52);
+      padding-bottom:40px;
+    }
+    .faculty .container {
+      /*border:1px solid red;*/
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .faculty .teacher{
+      /*border:1px solid blue;*/
+      display:block;
+      text-decoration: none;
+    }
+    .faculty .teacher img{
+      height: 450px;
+      width: 200px;
+    }
+    .faculty .teacher h3{
+      color: White;
+      background-color: rgba(39,40,34,.500);
+      text-align: center;           
+    }
+    /*===========================================================*/
+    /*contact*/
+    .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;                
+    }
+    .contact .container{
+          display: block;
+    }
+    .contact .container h2{
+          color: rgb(54, 82, 110);
+          font-size: 25px;
+    }
+    .contact .container .infos{
+          display:flex;
+          margin-top: 30px; 
+    }
+    .contact .container .infos .left{
+          display:block;
+          text-align: left;
+          margin-right: 30px;
+    }
+    .contact .container .infos .left b{
+          display:block;
+          text-align: left;
+          margin-top: 10px;
+          text-decoration: bold;
+          color: Gray;
+          font-size: 18px;
+          line-height: 18px;
+    }
+    .contact .container .infos .left span{
+          display:block;
+          text-align: left;
+          margin-top: 10px;
+          color: rgba(39,40,34,0.5);
+          font-size: 16px;
+          padding-left: 27px;
+    }
+    .contact .container .infos .right{
+          height: 200px;               
+    }
+    .contact .container .infos .right iframe{
+          width: 100%;
+          height: 100%;
+    }
+    /*===========================================================*/
+    /*footer*/
+    .footer{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    padding: 30px 0;
+    }
+    </style>
+  </head>
+<body>
+  <!--top-->
+  <div class="top">
+    <div class="container">
+      <div class="loge">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bxCT0GguDVKaumd62_nFg-m_nbAV_hbHqw&usqp=CAU">Monster<span style=color:white;>台灣產品介紹</span>
+      </div>
+      <div class="top-nav">
+      <a href="https://www.monsterenergy.com/tw/zh_tw/products/monster-energy">官方網站</a>
+      <a href="https://www.monsterenergy.com/tw/zh_tw/news">近期活動</a>
+      <a href=#>會員登入</a>
+      </div>
+    </div>
+   </div>
+  <!--===========================================================-->
+  <!--top 單層式選單&(多層式)下拉式選單-->
+  <div class="nav">   
+    <ul>
+        <li><a href="#home">首頁</a></li>
+        <li class="dropdown"><a href="#introduction">品牌介紹</a>
+           <div class="dropdown-content">
+             <a href="https://www.google.com/maps/place/806%E9%AB%98%E9%9B%84%E5%B8%82%E5%89%8D%E9%8E%AE%E5%8D%80%E4%B8%AD%E5%B1%B1%E4%BA%8C%E8%B7%AF91%E8%99%9F/@22.6094897,120.3036238,17z/data=!3m1!4b1!4m5!3m4!1s0x346e037b80599aaf:0xe176cffa49ff2cc5!8m2!3d22.6094897!4d120.3058125">總部位置</a>
+             <a href="https://zh.wikipedia.org/zh-tw/%E6%80%AA%E7%8D%B8%E8%83%BD%E9%87%8F%E9%A3%B2%E6%96%99">品牌歷史</a>
+           </div>
+        </li>
+        <li class="dropdown"><a href="#faculty">推出口味</a>
+           <div class="dropdown-content">
+             <a href="#faculty">Monster Energy</a>
+             <a href="#faculty">Monster Extra</a>
+             <a href="#faculty">Ultra Sunrise</a>
+           </div>
+        </li>
+        <li class="dropdown"><a href="#about">相關資訊</a>
+           <div class="dropdown-content">
+             <a href="https://www.monsterenergy.com/tw/zh_tw/news">近期活動</a>
+           </div>
+        </li>
+    </ul>
+  </div>
+  <!--===========================================================-->
+  <!--slider-->
+  <div class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2022/05/02/1600/auto/0ef506547d0ffccb106eba80effd63e5.jpg?mod=v1_b70cdd24aa632de5fb2efd1fa46329ec" /></li>
+            <li><img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2022/08/09/1600/auto/98fdec1e4512a37d64830f8a86c3e093.jpg?mod=v1_8721aa95e1fd28f75c4062ade862186a" /></li>
+            <li><img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2021/12/23/1600/auto/79db764218218c1896b1dcfb28e7abc5.jpg?mod=v1_7fbb60ff7533bc1e3ec65feff77c7582" /></li>
+        </ul>
+    </div>
+  </div>
+  <!--===========================================================-->
+  <!--banner-->
+  <div class="banner" id="introduction">
+    <h1>2023即將推出最新口味</h1>
+      <h2>Coming soon</h2>
+  </div>
+  <!--===========================================================-->
+  <!--faculty-->
+  <div class="faculty" id="faculty">
+    <h2>推出口味</h2>
+    <div class="container">
+        <a class="teacher" href="#faculty">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2021/04/06/auto/800/aba133b389bb4b42b48ed02a6ca41a5e.png?mod=v1_5a37fbe77101ef875e434a238cedfd5c" />
+            <h3>Monster Energy</h3>
+        </a>
+        <a class="teacher" href="#faculty">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2019/01/30/auto/800/b8570f93ccac51da8e645075994cb5d1.png?mod=v1_ff1d6d0a715c4bce8f6d0ff1714c8b82" />
+            <h3>Monster Extra</h3>
+       </a>
+       <a class="teacher" href="#faculty">
+           <img src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2019/07/26/auto/800/f74c416ed6520aa15e092f79e32ebbae.png?mod=v1_9a63575f8fe7420f236e856e1d281d15" />
+           <h3>Ultra Sunrise</h3>
+       </a>        
+    </div>
+</div>
+  <!--===========================================================-->
+  <!--contact-->
+  <div class="contact" id="about">
+    <div class="container">
+        <h2>台灣代理聯絡資訊</h2>
+        <div class="infos">
+            <div class="left">
+                <b>杰鼎奧拉</b>
+                <span>80661高雄市前鎮區
+中山二路91號7F之7</span>
+                <b> 電話:(07)226-8080</b>
+                <b> 傳真:(07)226-8181</b>
+            </div>
+            <div class="right">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1870373304746!2d120.30581249999999!3d22.609489699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e037b80599aaf%3A0xe176cffa49ff2cc5!2zODA26auY6ZuE5biC5YmN6Y6u5Y2A5Lit5bGx5LqM6LevOTHomZ8!5e0!3m2!1szh-TW!2stw!4v1671637391638!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--===========================================================-->
+  <!--footer-->
+  <div class="footer">
+    &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 JinChang Lee
+ </div>
+    <!--===========================================================-->
+</body>
+</html>
